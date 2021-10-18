@@ -1,4 +1,7 @@
-package factory.strategy;
+package factory.strategy.objects;
+
+import factory.strategy.behavior.implementations.FlyWithWings;
+import factory.strategy.behavior.implementations.Quack;
 
 public class RedHeadDuck extends Duck {
  

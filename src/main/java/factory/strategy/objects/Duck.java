@@ -1,8 +1,11 @@
-package factory.strategy;
+package factory.strategy.objects;
+
+import factory.strategy.behavior.FlyBehavior;
+import factory.strategy.behavior.QuackBehavior;
 
 public abstract class Duck {
-	FlyBehavior flyBehavior;
-	QuackBehavior quackBehavior;
+	protected FlyBehavior flyBehavior;
+	protected QuackBehavior quackBehavior;
 
 	public Duck() {
 	}

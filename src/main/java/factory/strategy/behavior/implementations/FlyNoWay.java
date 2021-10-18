@@ -1,4 +1,6 @@
-package factory.strategy;
+package factory.strategy.behavior.implementations;
+
+import factory.strategy.behavior.FlyBehavior;
 
 public class FlyNoWay implements FlyBehavior {
 	public void fly() {
