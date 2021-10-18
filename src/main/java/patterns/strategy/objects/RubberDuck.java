@@ -1,8 +1,8 @@
-package factory.strategy.objects;
+package patterns.strategy.objects;
 
-import factory.strategy.behavior.FlyBehavior;
-import factory.strategy.behavior.QuackBehavior;
-import factory.strategy.behavior.implementations.FlyNoWay;
+import patterns.strategy.behavior.FlyBehavior;
+import patterns.strategy.behavior.QuackBehavior;
+import patterns.strategy.behavior.implementations.FlyNoWay;
 
 public class RubberDuck extends Duck {
  

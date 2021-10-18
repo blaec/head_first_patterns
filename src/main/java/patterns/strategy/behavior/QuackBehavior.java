@@ -1,4 +1,4 @@
-package factory.strategy.behavior;
+package patterns.strategy.behavior;
 
 public interface QuackBehavior {
 	void quack();

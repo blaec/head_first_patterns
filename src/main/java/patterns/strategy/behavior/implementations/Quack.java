@@ -1,6 +1,6 @@
-package factory.strategy.behavior.implementations;
+package patterns.strategy.behavior.implementations;
 
-import factory.strategy.behavior.QuackBehavior;
+import patterns.strategy.behavior.QuackBehavior;
 
 public class Quack implements QuackBehavior {
 	public void quack() {

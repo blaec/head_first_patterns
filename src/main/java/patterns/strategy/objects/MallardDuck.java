@@ -1,7 +1,7 @@
-package factory.strategy.objects;
+package patterns.strategy.objects;
 
-import factory.strategy.behavior.implementations.FlyWithWings;
-import factory.strategy.behavior.implementations.Quack;
+import patterns.strategy.behavior.implementations.FlyWithWings;
+import patterns.strategy.behavior.implementations.Quack;
 
 public class MallardDuck extends Duck {
 

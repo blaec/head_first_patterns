@@ -1,7 +1,7 @@
-package factory.strategy.objects;
+package patterns.strategy.objects;
 
-import factory.strategy.behavior.implementations.FlyNoWay;
-import factory.strategy.behavior.implementations.Quack;
+import patterns.strategy.behavior.implementations.FlyNoWay;
+import patterns.strategy.behavior.implementations.Quack;
 
 public class ModelDuck extends Duck {
 	public ModelDuck() {

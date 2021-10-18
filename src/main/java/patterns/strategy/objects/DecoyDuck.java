@@ -1,8 +1,7 @@
-package factory.strategy.objects;
+package patterns.strategy.objects;
 
-import factory.strategy.behavior.FlyBehavior;
-import factory.strategy.behavior.implementations.FlyNoWay;
-import factory.strategy.behavior.implementations.MuteQuack;
+import patterns.strategy.behavior.implementations.FlyNoWay;
+import patterns.strategy.behavior.implementations.MuteQuack;
 
 public class DecoyDuck extends Duck {
 	public DecoyDuck() {

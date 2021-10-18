@@ -1,9 +1,9 @@
-package factory.strategy;
+package patterns.strategy;
 
-import factory.strategy.behavior.FlyBehavior;
-import factory.strategy.behavior.QuackBehavior;
-import factory.strategy.behavior.implementations.FlyRocketPowered;
-import factory.strategy.objects.*;
+import patterns.strategy.behavior.FlyBehavior;
+import patterns.strategy.behavior.QuackBehavior;
+import patterns.strategy.behavior.implementations.FlyRocketPowered;
+import patterns.strategy.objects.*;
 
 public class MiniDuckSimulator {
  
