@@ -5,11 +5,9 @@ import java.util.Observer;
 
 public class SimpleObserver implements Observer {
 	private int value;
-	private Observable observable;
-	
+
 	public SimpleObserver(Observable observable) {
-		this.observable = observable;
-		observable.addObserver((Observer) this);
+		observable.addObserver(this);
 	}
 	
 	public void display() {

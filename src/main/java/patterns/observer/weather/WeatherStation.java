@@ -1,12 +1,16 @@
 package patterns.observer.weather;
 
+import patterns.observer.weather.display.CurrentConditionsDisplay;
+import patterns.observer.weather.display.ForecastDisplay;
+import patterns.observer.weather.display.StatisticsDisplay;
+import patterns.observer.weather.subject.WeatherData;
+
 public class WeatherStation {
 
 	public static void main(String[] args) {
 		WeatherData weatherData = new WeatherData();
 	
-		CurrentConditionsDisplay currentDisplay = 
-			new CurrentConditionsDisplay(weatherData);
+		CurrentConditionsDisplay currentDisplay = new CurrentConditionsDisplay(weatherData);
 		StatisticsDisplay statisticsDisplay = new StatisticsDisplay(weatherData);
 		ForecastDisplay forecastDisplay = new ForecastDisplay(weatherData);
 

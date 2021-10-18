@@ -1,12 +1,13 @@
-package patterns.observer.weather;
-	
+package patterns.observer.weather.display;
+
+import patterns.observer.weather.subject.WeatherData;
+import patterns.observer.weather.observer.Observer;
+
 public class CurrentConditionsDisplay implements Observer, DisplayElement {
 	private float temperature;
 	private float humidity;
-	private WeatherData weatherData;
-	
+
 	public CurrentConditionsDisplay(WeatherData weatherData) {
-		this.weatherData = weatherData;
 		weatherData.registerObserver(this);
 	}
 	

@@ -1,5 +1,11 @@
 package patterns.observer.weather;
 
+import patterns.observer.weather.display.CurrentConditionsDisplay;
+import patterns.observer.weather.display.ForecastDisplay;
+import patterns.observer.weather.display.HeatIndexDisplay;
+import patterns.observer.weather.display.StatisticsDisplay;
+import patterns.observer.weather.subject.WeatherData;
+
 public class WeatherStationHeatIndex {
 
 	public static void main(String[] args) {

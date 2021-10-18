@@ -1,4 +1,6 @@
-package patterns.observer.weatherobservable;
+package patterns.observer.weatherobservable.display;
+
+import patterns.observer.weatherobservable.WeatherData;
 
 import java.util.Observable;
 import java.util.Observer;
@@ -12,7 +14,8 @@ public class CurrentConditionsDisplay implements Observer, DisplayElement {
 		this.observable = observable;
 		observable.addObserver(this);
 	}
-	
+
+	@Override
 	public void update(Observable obs, Object arg) {
 		if (obs instanceof WeatherData) {
 			WeatherData weatherData = (WeatherData)obs;
@@ -21,7 +24,8 @@ public class CurrentConditionsDisplay implements Observer, DisplayElement {
 			display();
 		}
 	}
-	
+
+	@Override
 	public void display() {
 		System.out.println("Current conditions: " + temperature 
 			+ "F degrees and " + humidity + "% humidity");

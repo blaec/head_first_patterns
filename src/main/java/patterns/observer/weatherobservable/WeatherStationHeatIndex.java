@@ -1,5 +1,10 @@
 package patterns.observer.weatherobservable;
 
+import patterns.observer.weatherobservable.display.CurrentConditionsDisplay;
+import patterns.observer.weatherobservable.display.ForecastDisplay;
+import patterns.observer.weatherobservable.display.HeatIndexDisplay;
+import patterns.observer.weatherobservable.display.StatisticsDisplay;
+
 public class WeatherStationHeatIndex {
 
 	public static void main(String[] args) {

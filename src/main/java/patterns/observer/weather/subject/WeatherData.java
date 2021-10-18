@@ -1,16 +1,19 @@
-package patterns.observer.weather;
+package patterns.observer.weather.subject;
+
+import patterns.observer.weather.observer.Observer;
+import patterns.observer.weather.subject.Subject;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class WeatherData implements Subject {
-	private List<Observer> observers;
+	private final List<Observer> observers;
 	private float temperature;
 	private float humidity;
 	private float pressure;
 
 	public WeatherData() {
-		observers = new ArrayList<Observer>();
+		observers = new ArrayList<>();
 	}
 
 	public void registerObserver(Observer o) {

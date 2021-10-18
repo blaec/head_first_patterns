@@ -1,5 +1,8 @@
 package patterns.observer.simple;
 
+import patterns.observer.simple.observer.SimpleObserver;
+import patterns.observer.simple.subject.SimpleSubject;
+
 public class Example {
 
 	public static void main(String[] args) {

@@ -1,4 +1,6 @@
-package patterns.observer.weatherobservable;
+package patterns.observer.weatherobservable.display;
+
+import patterns.observer.weatherobservable.WeatherData;
 
 import java.util.Observable;
 import java.util.Observer;
@@ -13,6 +15,7 @@ public class StatisticsDisplay implements Observer, DisplayElement {
 		observable.addObserver(this);
 	}
 
+	@Override
 	public void update(Observable observable, Object arg) {
 		if (observable instanceof WeatherData) {
 			WeatherData weatherData = (WeatherData)observable;
@@ -32,6 +35,7 @@ public class StatisticsDisplay implements Observer, DisplayElement {
 		}
 	}
 
+	@Override
 	public void display() {
 		System.out.println("Avg/Max/Min temperature = " + (tempSum / numReadings)
 			+ "/" + maxTemp + "/" + minTemp);

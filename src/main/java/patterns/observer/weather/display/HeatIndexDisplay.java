@@ -1,11 +1,12 @@
-package patterns.observer.weather;
+package patterns.observer.weather.display;
+
+import patterns.observer.weather.subject.WeatherData;
+import patterns.observer.weather.observer.Observer;
 
 public class HeatIndexDisplay implements Observer, DisplayElement {
 	float heatIndex = 0.0f;
-	private WeatherData weatherData;
 
 	public HeatIndexDisplay(WeatherData weatherData) {
-		this.weatherData = weatherData;
 		weatherData.registerObserver(this);
 	}
 

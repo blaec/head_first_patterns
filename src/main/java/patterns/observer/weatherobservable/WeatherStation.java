@@ -1,5 +1,9 @@
 package patterns.observer.weatherobservable;
 
+import patterns.observer.weatherobservable.display.CurrentConditionsDisplay;
+import patterns.observer.weatherobservable.display.ForecastDisplay;
+import patterns.observer.weatherobservable.display.StatisticsDisplay;
+
 public class WeatherStation {
 
 	public static void main(String[] args) {

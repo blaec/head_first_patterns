@@ -1,12 +1,13 @@
-package patterns.observer.weather;
+package patterns.observer.weather.display;
+
+import patterns.observer.weather.subject.WeatherData;
+import patterns.observer.weather.observer.Observer;
 
 public class ForecastDisplay implements Observer, DisplayElement {
 	private float currentPressure = 29.92f;  
 	private float lastPressure;
-	private WeatherData weatherData;
 
 	public ForecastDisplay(WeatherData weatherData) {
-		this.weatherData = weatherData;
 		weatherData.registerObserver(this);
 	}
 

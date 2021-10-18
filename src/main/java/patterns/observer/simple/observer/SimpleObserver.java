@@ -1,14 +1,15 @@
-package patterns.observer.simple;
+package patterns.observer.simple.observer;
+
+import patterns.observer.simple.subject.Subject;
 
 public class SimpleObserver implements Observer {
 	private int value;
-	private Subject simpleSubject;
-	
+
 	public SimpleObserver(Subject simpleSubject) {
-		this.simpleSubject = simpleSubject;
 		simpleSubject.registerObserver(this);
 	}
-	
+
+	@Override
 	public void update(int value) {
 		this.value = value;
 		display();
