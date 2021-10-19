@@ -1,8 +1,8 @@
-package patterns.factory.pizzas;
+package patterns.factory.simpleFactory;
 
-import patterns.factory.pizzas.factory.SimplePizzaFactory;
-import patterns.factory.pizzas.objects.Pizza;
-import patterns.factory.pizzas.store.PizzaStore;
+import patterns.factory.simpleFactory.factory.SimplePizzaFactory;
+import patterns.factory.simpleFactory.objects.Pizza;
+import patterns.factory.simpleFactory.store.PizzaStore;
 
 public class PizzaTestDrive {
  

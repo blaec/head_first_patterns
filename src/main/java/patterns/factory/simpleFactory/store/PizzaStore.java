@@ -1,7 +1,7 @@
-package patterns.factory.pizzas.store;
+package patterns.factory.simpleFactory.store;
 
-import patterns.factory.pizzas.factory.SimplePizzaFactory;
-import patterns.factory.pizzas.objects.Pizza;
+import patterns.factory.simpleFactory.factory.SimplePizzaFactory;
+import patterns.factory.simpleFactory.objects.Pizza;
 
 public class PizzaStore {
 	SimplePizzaFactory factory;

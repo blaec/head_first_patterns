@@ -1,6 +1,6 @@
-package patterns.factory.pizzas.factory;
+package patterns.factory.simpleFactory.factory;
 
-import patterns.factory.pizzas.objects.*;
+import patterns.factory.simpleFactory.objects.*;
 
 public class SimplePizzaFactory {
 

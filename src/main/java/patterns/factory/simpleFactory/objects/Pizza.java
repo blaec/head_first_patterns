@@ -1,4 +1,4 @@
-package patterns.factory.pizzas.objects;
+package patterns.factory.simpleFactory.objects;
 
 import java.util.ArrayList;
 import java.util.List;
