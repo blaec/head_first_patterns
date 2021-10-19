@@ -1,5 +1,10 @@
 package patterns.factory.pizzafm;
 
+import patterns.factory.pizzafm.objects.Pizza;
+import patterns.factory.pizzafm.store.ChicagoPizzaStore;
+import patterns.factory.pizzafm.store.NYPizzaStore;
+import patterns.factory.pizzafm.store.PizzaStore;
+
 public class PizzaTestDrive {
  
 	public static void main(String[] args) {

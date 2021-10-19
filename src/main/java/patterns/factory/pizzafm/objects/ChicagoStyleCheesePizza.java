@@ -1,4 +1,4 @@
-package patterns.factory.pizzafm;
+package patterns.factory.pizzafm.objects;
 
 public class ChicagoStyleCheesePizza extends Pizza {
 
@@ -9,8 +9,9 @@ public class ChicagoStyleCheesePizza extends Pizza {
  
 		toppings.add("Shredded Mozzarella Cheese");
 	}
- 
-	void cut() {
+
+	@Override
+	public void cut() {
 		System.out.println("Cutting the pizza into square slices");
 	}
 }

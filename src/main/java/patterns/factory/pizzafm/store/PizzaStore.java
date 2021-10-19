@@ -1,4 +1,6 @@
-package patterns.factory.pizzafm;
+package patterns.factory.pizzafm.store;
+
+import patterns.factory.pizzafm.objects.Pizza;
 
 public abstract class PizzaStore {
  

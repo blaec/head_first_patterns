@@ -1,4 +1,4 @@
-package patterns.factory.pizzafm;
+package patterns.factory.pizzafm.objects;
 
 import java.util.ArrayList;
 
@@ -6,9 +6,9 @@ public abstract class Pizza {
 	String name;
 	String dough;
 	String sauce;
-	ArrayList<String> toppings = new ArrayList<String>();
+	ArrayList<String> toppings = new ArrayList<>();
  
-	void prepare() {
+	public void prepare() {
 		System.out.println("Prepare " + name);
 		System.out.println("Tossing dough...");
 		System.out.println("Adding sauce...");
@@ -17,16 +17,16 @@ public abstract class Pizza {
 			System.out.println("   " + topping);
 		}
 	}
-  
-	void bake() {
+
+	public void bake() {
 		System.out.println("Bake for 25 minutes at 350");
 	}
- 
-	void cut() {
+
+	public void cut() {
 		System.out.println("Cut the pizza into diagonal slices");
 	}
-  
-	void box() {
+
+	public void box() {
 		System.out.println("Place pizza in official PizzaStore box");
 	}
  
@@ -35,12 +35,12 @@ public abstract class Pizza {
 	}
 
 	public String toString() {
-		StringBuffer display = new StringBuffer();
-		display.append("---- " + name + " ----\n");
-		display.append(dough + "\n");
-		display.append(sauce + "\n");
+		StringBuilder display = new StringBuilder();
+		display.append("---- ").append(name).append(" ----\n");
+		display.append(dough).append("\n");
+		display.append(sauce).append("\n");
 		for (String topping : toppings) {
-			display.append(topping + "\n");
+			display.append(topping).append("\n");
 		}
 		return display.toString();
 	}

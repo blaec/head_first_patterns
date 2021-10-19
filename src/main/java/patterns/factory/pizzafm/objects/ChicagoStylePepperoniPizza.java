@@ -1,4 +1,6 @@
-package patterns.factory.pizzafm;
+package patterns.factory.pizzafm.objects;
+
+import patterns.factory.pizzafm.objects.Pizza;
 
 public class ChicagoStylePepperoniPizza extends Pizza {
 	public ChicagoStylePepperoniPizza() {
@@ -12,8 +14,9 @@ public class ChicagoStylePepperoniPizza extends Pizza {
 		toppings.add("Eggplant");
 		toppings.add("Sliced Pepperoni");
 	}
- 
-	void cut() {
+
+	@Override
+	public void cut() {
 		System.out.println("Cutting the pizza into square slices");
 	}
 }
