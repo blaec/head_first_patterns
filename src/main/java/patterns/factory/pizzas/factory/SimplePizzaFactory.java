@@ -1,4 +1,4 @@
-package patterns.factory.pizzas;
+package patterns.factory.pizzas.factory;
 
 import patterns.factory.pizzas.objects.*;
 
