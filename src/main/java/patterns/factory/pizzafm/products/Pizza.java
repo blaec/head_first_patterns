@@ -1,4 +1,4 @@
-package patterns.factory.pizzafm.objects;
+package patterns.factory.pizzafm.products;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package patterns.factory.simpleFactory.objects;
+package patterns.factory.simpleFactory.products;
 
 import java.util.ArrayList;
 import java.util.List;

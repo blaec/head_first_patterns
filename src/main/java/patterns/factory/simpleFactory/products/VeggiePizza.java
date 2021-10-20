@@ -1,4 +1,4 @@
-package patterns.factory.simpleFactory.objects;
+package patterns.factory.simpleFactory.products;
 
 public class VeggiePizza extends Pizza {
 	public VeggiePizza() {

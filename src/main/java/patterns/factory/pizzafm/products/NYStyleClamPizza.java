@@ -1,6 +1,4 @@
-package patterns.factory.pizzafm.objects;
-
-import patterns.factory.pizzafm.objects.Pizza;
+package patterns.factory.pizzafm.products;
 
 public class NYStyleClamPizza extends Pizza {
 

@@ -1,10 +1,8 @@
-package patterns.factory.pizzafm.objects;
+package patterns.factory.pizzafm.products;
 
-import patterns.factory.pizzafm.objects.Pizza;
-
-public class ChicagoStyleVeggiePizza extends Pizza {
-	public ChicagoStyleVeggiePizza() {
-		name = "Chicago Deep Dish Veggie Pizza";
+public class ChicagoStylePepperoniPizza extends Pizza {
+	public ChicagoStylePepperoniPizza() {
+		name = "Chicago Style Pepperoni Pizza";
 		dough = "Extra Thick Crust Dough";
 		sauce = "Plum Tomato Sauce";
  
@@ -12,6 +10,7 @@ public class ChicagoStyleVeggiePizza extends Pizza {
 		toppings.add("Black Olives");
 		toppings.add("Spinach");
 		toppings.add("Eggplant");
+		toppings.add("Sliced Pepperoni");
 	}
 
 	@Override

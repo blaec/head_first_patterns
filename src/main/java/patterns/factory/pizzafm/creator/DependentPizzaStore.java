@@ -1,6 +1,6 @@
-package patterns.factory.pizzafm.store;
+package patterns.factory.pizzafm.creator;
 
-import patterns.factory.pizzafm.objects.*;
+import patterns.factory.pizzafm.products.*;
 
 public class DependentPizzaStore {
  
