@@ -1,4 +1,4 @@
-package patterns.factory.pizzafm.products;
+package patterns.factory.factoryMethodPattern.products;
 
 public class NYStylePepperoniPizza extends Pizza {
 

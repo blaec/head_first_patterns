@@ -1,4 +1,4 @@
-package patterns.factory.pizzafm.products;
+package patterns.factory.factoryMethodPattern.products;
 
 public class ChicagoStylePepperoniPizza extends Pizza {
     public ChicagoStylePepperoniPizza() {
