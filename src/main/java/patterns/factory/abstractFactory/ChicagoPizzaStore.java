@@ -1,5 +1,8 @@
 package patterns.factory.abstractFactory;
 
+import patterns.factory.abstractFactory.factory.ChicagoPizzaIngredientFactory;
+import patterns.factory.abstractFactory.factory.PizzaIngredientFactory;
+
 public class ChicagoPizzaStore extends PizzaStore {
 
 	protected Pizza createPizza(String item) {

@@ -1,10 +1,13 @@
 package patterns.factory.abstractFactory;
 
+import patterns.factory.abstractFactory.factory.NYPizzaIngredientFactory;
+import patterns.factory.abstractFactory.factory.PizzaIngredientFactory;
+
 public class NYPizzaStore extends PizzaStore {
  
 	protected Pizza createPizza(String item) {
 		Pizza pizza = null;
-		PizzaIngredientFactory ingredientFactory = 
+		PizzaIngredientFactory ingredientFactory =
 			new NYPizzaIngredientFactory();
  
 		if (item.equals("cheese")) {
