@@ -1,12 +1,12 @@
-package patterns.factory.abstractFactory;
+package patterns.factory.abstractFactory.products;
 
 import patterns.factory.abstractFactory.factory.PizzaIngredientFactory;
 import patterns.factory.abstractFactory.products.Pizza;
 
-public class CheesePizza extends Pizza {
+public class ClamPizza extends Pizza {
 	PizzaIngredientFactory ingredientFactory;
  
-	public CheesePizza(PizzaIngredientFactory ingredientFactory) {
+	public ClamPizza(PizzaIngredientFactory ingredientFactory) {
 		this.ingredientFactory = ingredientFactory;
 	}
  
@@ -15,5 +15,6 @@ public class CheesePizza extends Pizza {
 		dough = ingredientFactory.createDough();
 		sauce = ingredientFactory.createSauce();
 		cheese = ingredientFactory.createCheese();
+		clam = ingredientFactory.createClam();
 	}
 }

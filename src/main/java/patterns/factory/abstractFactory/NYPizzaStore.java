@@ -2,7 +2,7 @@ package patterns.factory.abstractFactory;
 
 import patterns.factory.abstractFactory.factory.NYPizzaIngredientFactory;
 import patterns.factory.abstractFactory.factory.PizzaIngredientFactory;
-import patterns.factory.abstractFactory.products.Pizza;
+import patterns.factory.abstractFactory.products.*;
 
 public class NYPizzaStore extends PizzaStore {
  

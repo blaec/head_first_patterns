@@ -3,13 +3,13 @@ package patterns.factory.abstractFactory.products;
 import patterns.factory.abstractFactory.*;
 
 public abstract class Pizza {
-    String name;
-    Dough dough;
-    Sauce sauce;
-    Veggies[] veggies;
-    Cheese cheese;
-    Pepperoni pepperoni;
-    Clams clam;
+    protected String name;
+    protected Dough dough;
+    protected Sauce sauce;
+    protected Veggies[] veggies;
+    protected Cheese cheese;
+    protected Pepperoni pepperoni;
+    protected Clams clam;
 
     abstract void prepare();
 
