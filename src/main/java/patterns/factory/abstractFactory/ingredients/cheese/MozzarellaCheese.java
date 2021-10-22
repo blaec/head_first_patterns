@@ -1,8 +1,8 @@
 package patterns.factory.abstractFactory.ingredients.cheese;
 
 public class MozzarellaCheese implements Cheese {
-
-	public String toString() {
-		return "Shredded Mozzarella";
-	}
+    @Override
+    public String toString() {
+        return "Shredded Mozzarella";
+    }
 }
