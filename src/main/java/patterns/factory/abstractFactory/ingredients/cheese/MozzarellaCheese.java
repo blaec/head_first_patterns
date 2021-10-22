@@ -1,4 +1,4 @@
-package patterns.factory.abstractFactory;
+package patterns.factory.abstractFactory.ingredients.cheese;
 
 public class MozzarellaCheese implements Cheese {
 

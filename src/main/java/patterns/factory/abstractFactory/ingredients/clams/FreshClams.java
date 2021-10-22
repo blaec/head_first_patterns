@@ -1,4 +1,4 @@
-package patterns.factory.abstractFactory;
+package patterns.factory.abstractFactory.ingredients.clams;
 
 public class FreshClams implements Clams {
 

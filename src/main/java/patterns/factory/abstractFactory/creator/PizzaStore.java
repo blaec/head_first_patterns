@@ -1,4 +1,4 @@
-package patterns.factory.abstractFactory;
+package patterns.factory.abstractFactory.creator;
 
 import patterns.factory.abstractFactory.products.Pizza;
 

@@ -1,6 +1,11 @@
 package patterns.factory.abstractFactory.products;
 
-import patterns.factory.abstractFactory.*;
+import patterns.factory.abstractFactory.ingredients.cheese.Cheese;
+import patterns.factory.abstractFactory.ingredients.clams.Clams;
+import patterns.factory.abstractFactory.ingredients.dough.Dough;
+import patterns.factory.abstractFactory.ingredients.pepperoni.Pepperoni;
+import patterns.factory.abstractFactory.ingredients.souce.Sauce;
+import patterns.factory.abstractFactory.ingredients.veggies.Veggies;
 
 public abstract class Pizza {
     protected String name;
@@ -11,25 +16,25 @@ public abstract class Pizza {
     protected Pepperoni pepperoni;
     protected Clams clam;
 
-    abstract void prepare();
+    public abstract void prepare();
 
-    void bake() {
+    public void bake() {
         System.out.println("Bake for 25 minutes at 350");
     }
 
-    void cut() {
+    public void cut() {
         System.out.println("Cutting the pizza into diagonal slices");
     }
 
-    void box() {
+    public void box() {
         System.out.println("Place pizza in official PizzaStore box");
     }
 
-    void setName(String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
-    String getName() {
+    public String getName() {
         return name;
     }
 
