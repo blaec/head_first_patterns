@@ -1,5 +1,7 @@
 package patterns.factory.abstractFactory;
 
+import patterns.factory.abstractFactory.products.Pizza;
+
 public class PizzaTestDrive {
  
 	public static void main(String[] args) {

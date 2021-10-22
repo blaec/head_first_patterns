@@ -1,6 +1,7 @@
 package patterns.factory.abstractFactory;
 
 import patterns.factory.abstractFactory.factory.PizzaIngredientFactory;
+import patterns.factory.abstractFactory.products.Pizza;
 
 public class VeggiePizza extends Pizza {
 	PizzaIngredientFactory ingredientFactory;

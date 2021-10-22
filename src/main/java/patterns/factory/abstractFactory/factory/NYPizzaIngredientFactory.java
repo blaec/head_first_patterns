@@ -23,10 +23,10 @@ public class NYPizzaIngredientFactory implements PizzaIngredientFactory {
     public Veggies[] createVeggies() {
         return new Veggies[]
                 {
-                        new Garlic(),
-                        new Onion(),
-                        new Mushroom(),
-                        new RedPepper()
+                    new Garlic(),
+                    new Onion(),
+                    new Mushroom(),
+                    new RedPepper()
                 };
     }
 

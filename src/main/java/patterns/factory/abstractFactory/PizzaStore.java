@@ -1,5 +1,7 @@
 package patterns.factory.abstractFactory;
 
+import patterns.factory.abstractFactory.products.Pizza;
+
 public abstract class PizzaStore {
  
 	protected abstract Pizza createPizza(String item);
