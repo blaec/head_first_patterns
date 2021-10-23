@@ -1,4 +1,4 @@
-package patterns.singleton.staticSingleton;
+package patterns.singleton.d_staticSingleton;
 
 public class Singleton {
 	private static Singleton uniqueInstance = new Singleton();

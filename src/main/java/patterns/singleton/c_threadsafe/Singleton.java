@@ -1,13 +1,13 @@
-package patterns.singleton.classic;
-
-// NOTE: This is not thread safe!
+package patterns.singleton.c_threadsafe;
 
 public class Singleton {
 	private static Singleton uniqueInstance;
  
+	// other useful instance variables here
+ 
 	private Singleton() {}
  
-	public static Singleton getInstance() {
+	public static synchronized Singleton getInstance() {
 		if (uniqueInstance == null) {
 			uniqueInstance = new Singleton();
 		}
@@ -16,6 +16,6 @@ public class Singleton {
  
 	// other useful methods here
 	public String getDescription() {
-		return "I'm a classic Singleton!";
+		return "I'm a thread safe Singleton!";
 	}
 }

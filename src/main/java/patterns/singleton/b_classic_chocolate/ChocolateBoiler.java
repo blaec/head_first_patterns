@@ -1,4 +1,4 @@
-package patterns.singleton.classic_chocolate;
+package patterns.singleton.b_classic_chocolate;
  
 public class ChocolateBoiler {
 	private boolean empty;
