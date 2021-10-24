@@ -1,4 +1,6 @@
-package patterns.command.a_simpleRemote;
+package patterns.command.a_simpleRemote.invoker;
+
+import patterns.command.a_simpleRemote.command.Command;
 
 //
 // This is the invoker

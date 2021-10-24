@@ -1,12 +1,15 @@
-package patterns.command.a_simpleRemote;
+package patterns.command.a_simpleRemote.command;
+
+import patterns.command.a_simpleRemote.receiver.GarageDoor;
 
 public class GarageDoorOpenCommand implements Command {
-	GarageDoor garageDoor;
+	private final GarageDoor garageDoor;
 
 	public GarageDoorOpenCommand(GarageDoor garageDoor) {
 		this.garageDoor = garageDoor;
 	}
 
+	@Override
 	public void execute() {
 		garageDoor.up();
 	}

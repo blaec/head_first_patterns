@@ -1,4 +1,4 @@
-package patterns.command.a_simpleRemote;
+package patterns.command.a_simpleRemote.receiver;
 
 public class GarageDoor {
 

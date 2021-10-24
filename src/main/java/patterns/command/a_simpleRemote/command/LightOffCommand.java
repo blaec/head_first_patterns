@@ -1,12 +1,15 @@
-package patterns.command.a_simpleRemote;
+package patterns.command.a_simpleRemote.command;
+
+import patterns.command.a_simpleRemote.receiver.Light;
 
 public class LightOffCommand implements Command {
-	Light light;
+	private final Light light;
  
 	public LightOffCommand(Light light) {
 		this.light = light;
 	}
- 
+
+	@Override
 	public void execute() {
 		light.off();
 	}
