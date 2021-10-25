@@ -1,5 +1,8 @@
 package patterns.command.b_party;
 
+import patterns.command.b_party.command.*;
+import patterns.command.b_party.invoker.RemoteControl;
+
 public class RemoteLoader {
 
 	public static void main(String[] args) {

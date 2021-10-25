@@ -1,16 +1,22 @@
-package patterns.command.b_party;
+package patterns.command.b_party.command;
 
-public class CeilingFanOffCommand implements Command {
-	CeilingFan ceilingFan;
-	int prevSpeed;
+import patterns.command.b_party.CeilingFan;
 
-	public CeilingFanOffCommand(CeilingFan ceilingFan) {
+public class CeilingFanMediumCommand implements Command {
+	private final CeilingFan ceilingFan;
+	private int prevSpeed;
+
+	public CeilingFanMediumCommand(CeilingFan ceilingFan) {
 		this.ceilingFan = ceilingFan;
 	}
+
+	@Override
 	public void execute() {
 		prevSpeed = ceilingFan.getSpeed();
-		ceilingFan.off();
+		ceilingFan.medium();
 	}
+
+	@Override
 	public void undo() {
 		switch (prevSpeed) {
 			case CeilingFan.HIGH: 	ceilingFan.high(); break;

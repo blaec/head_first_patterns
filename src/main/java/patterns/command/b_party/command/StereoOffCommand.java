@@ -1,16 +1,20 @@
-package patterns.command.b_party;
+package patterns.command.b_party.command;
+
+import patterns.command.b_party.Stereo;
 
 public class StereoOffCommand implements Command {
-	Stereo stereo;
+	private final Stereo stereo;
  
 	public StereoOffCommand(Stereo stereo) {
 		this.stereo = stereo;
 	}
- 
+
+	@Override
 	public void execute() {
 		stereo.off();
 	}
 
+	@Override
 	public void undo() {
 		stereo.on();
 	}
