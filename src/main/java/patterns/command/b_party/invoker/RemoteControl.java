@@ -10,13 +10,14 @@ public class RemoteControl {
     private final Command[] onCommands;
     private final Command[] offCommands;
     private Command undoCommand;
+    public static final int COMMAND_COUNT = 7;
 
     public RemoteControl() {
-        onCommands = new Command[7];
-        offCommands = new Command[7];
+        onCommands = new Command[COMMAND_COUNT];
+        offCommands = new Command[COMMAND_COUNT];
 
         Command noCommand = new NoCommand();
-        for (int i = 0; i < 7; i++) {
+        for (int i = 0; i < COMMAND_COUNT; i++) {
             onCommands[i] = noCommand;
             offCommands[i] = noCommand;
         }
@@ -45,18 +46,19 @@ public class RemoteControl {
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("\n------ Remote Control -------\n");
-        for (int i = 0; i < onCommands.length; i++) {
-            stringBuilder.append("[slot ")
-                         .append(i)
-                         .append("] ")
-                         .append(onCommands[i].getClass().getName())
-                         .append("    ")
-                         .append(offCommands[i].getClass().getName())
+        for (int i = 0; i < COMMAND_COUNT; i++) {
+            String commandMessage = String.format("[slot %d] %s    %s",
+                    i, getClassName(onCommands[i]), getClassName(offCommands[i]));
+            stringBuilder.append(commandMessage)
                          .append("\n");
         }
-        stringBuilder.append("[undo] ")
-                     .append(undoCommand.getClass().getName())
+        String undoMessage = String.format("[undo] %s", getClassName(undoCommand));
+        stringBuilder.append(undoMessage)
                      .append("\n");
         return stringBuilder.toString();
+    }
+
+    private String getClassName(Command command) {
+        return command.getClass().getName();
     }
 }
