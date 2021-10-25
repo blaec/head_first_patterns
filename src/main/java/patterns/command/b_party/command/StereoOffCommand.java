@@ -1,6 +1,6 @@
 package patterns.command.b_party.command;
 
-import patterns.command.b_party.Stereo;
+import patterns.command.b_party.receiver.Stereo;
 
 public class StereoOffCommand implements Command {
 	private final Stereo stereo;

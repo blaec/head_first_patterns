@@ -1,6 +1,6 @@
 package patterns.command.b_party.command;
 
-import patterns.command.b_party.Hottub;
+import patterns.command.b_party.receiver.Hottub;
 
 public class HottubOnCommand implements Command {
 	private final Hottub hottub;

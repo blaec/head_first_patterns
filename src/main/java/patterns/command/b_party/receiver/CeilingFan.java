@@ -1,4 +1,4 @@
-package patterns.command.b_party;
+package patterns.command.b_party.receiver;
 
 public class CeilingFan {
 	public static final int HIGH = 3;

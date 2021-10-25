@@ -1,6 +1,6 @@
 package patterns.command.b_party.command;
 
-import patterns.command.b_party.TV;
+import patterns.command.b_party.receiver.TV;
 
 public class TVOnCommand implements Command {
 	private final TV tv;

@@ -1,6 +1,6 @@
 package patterns.command.b_party.command;
 
-import patterns.command.b_party.Light;
+import patterns.command.b_party.receiver.Light;
 
 public class LivingroomLightOnCommand implements Command {
 	private final Light light;
