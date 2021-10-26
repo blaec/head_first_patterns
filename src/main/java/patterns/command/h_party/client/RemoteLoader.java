@@ -1,11 +1,11 @@
-package patterns.command.b_party.client;
+package patterns.command.h_party.client;
 
-import patterns.command.b_party.command.*;
-import patterns.command.b_party.invoker.RemoteControl;
-import patterns.command.b_party.receiver.Hottub;
-import patterns.command.b_party.receiver.Light;
-import patterns.command.b_party.receiver.Stereo;
-import patterns.command.b_party.receiver.TV;
+import patterns.command.h_party.command.*;
+import patterns.command.h_party.invoker.RemoteControl;
+import patterns.command.h_party.receiver.Hottub;
+import patterns.command.h_party.receiver.Light;
+import patterns.command.h_party.receiver.Stereo;
+import patterns.command.h_party.receiver.TV;
 
 public class RemoteLoader {
 

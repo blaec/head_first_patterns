@@ -1,4 +1,4 @@
-package patterns.command.b_party.receiver;
+package patterns.command.h_party.receiver;
 
 public class Light {
 	private final String location;

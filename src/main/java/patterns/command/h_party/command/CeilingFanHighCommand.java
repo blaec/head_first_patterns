@@ -1,6 +1,6 @@
-package patterns.command.b_party.command;
+package patterns.command.h_party.command;
 
-import patterns.command.b_party.receiver.CeilingFan;
+import patterns.command.h_party.receiver.CeilingFan;
 
 public class CeilingFanHighCommand implements Command {
 	private final CeilingFan ceilingFan;

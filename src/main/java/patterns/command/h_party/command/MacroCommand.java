@@ -1,4 +1,4 @@
-package patterns.command.b_party.command;
+package patterns.command.h_party.command;
 
 public class MacroCommand implements Command {
 	private final Command[] commands;

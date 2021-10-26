@@ -1,7 +1,7 @@
-package patterns.command.b_party.invoker;
+package patterns.command.h_party.invoker;
 
-import patterns.command.b_party.command.Command;
-import patterns.command.b_party.command.NoCommand;
+import patterns.command.h_party.command.Command;
+import patterns.command.h_party.command.NoCommand;
 
 //
 // This is the invoker
