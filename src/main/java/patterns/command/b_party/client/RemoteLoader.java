@@ -19,7 +19,7 @@ public class RemoteLoader {
 		Hottub hottub = new Hottub();
  
 		LightOnCommand lightOn = new LightOnCommand(light);
-		StereoOnCommand stereoOn = new StereoOnCommand(stereo);
+		StereoOnWithCDCommand stereoOn = new StereoOnWithCDCommand(stereo);
 		TVOnCommand tvOn = new TVOnCommand(tv);
 		HottubOnCommand hottubOn = new HottubOnCommand(hottub);
 		LightOffCommand lightOff = new LightOffCommand(light);

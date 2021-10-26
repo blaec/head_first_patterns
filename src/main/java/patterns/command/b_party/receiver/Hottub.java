@@ -1,8 +1,8 @@
 package patterns.command.b_party.receiver;
 
 public class Hottub {
-	boolean on;
-	int temperature;
+	private boolean on;
+	private int temperature;
 
 	public Hottub() {
 	}

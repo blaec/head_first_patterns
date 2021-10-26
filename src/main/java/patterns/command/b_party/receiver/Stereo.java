@@ -1,7 +1,7 @@
 package patterns.command.b_party.receiver;
 
 public class Stereo {
-	String location;
+	private final String location;
 
 	public Stereo(String location) {
 		this.location = location;

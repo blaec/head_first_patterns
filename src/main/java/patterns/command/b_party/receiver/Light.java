@@ -1,8 +1,8 @@
 package patterns.command.b_party.receiver;
 
 public class Light {
-	String location;
-	int level;
+	private final String location;
+	private int level;
 
 	public Light(String location) {
 		this.location = location;
@@ -10,12 +10,12 @@ public class Light {
 
 	public void on() {
 		level = 100;
-		System.out.println("Light is on");
+		System.out.printf("%s light is on%n", location);
 	}
 
 	public void off() {
 		level = 0;
-		System.out.println("Light is off");
+		System.out.printf("%s light is off%n", location);
 	}
 
 	public void dim(int level) {
