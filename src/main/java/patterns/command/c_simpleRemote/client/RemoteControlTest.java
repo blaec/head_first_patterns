@@ -1,10 +1,10 @@
-package patterns.command.a_simpleRemote.client;
+package patterns.command.c_simpleRemote.client;
 
-import patterns.command.a_simpleRemote.receiver.GarageDoor;
-import patterns.command.a_simpleRemote.receiver.Light;
-import patterns.command.a_simpleRemote.command.GarageDoorOpenCommand;
-import patterns.command.a_simpleRemote.command.LightOnCommand;
-import patterns.command.a_simpleRemote.invoker.SimpleRemoteControl;
+import patterns.command.c_simpleRemote.receiver.GarageDoor;
+import patterns.command.c_simpleRemote.receiver.Light;
+import patterns.command.c_simpleRemote.command.GarageDoorOpenCommand;
+import patterns.command.c_simpleRemote.command.LightOnCommand;
+import patterns.command.c_simpleRemote.invoker.SimpleRemoteControl;
 
 public class RemoteControlTest {
 	public static void main(String[] args) {

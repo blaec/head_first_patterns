@@ -1,6 +1,6 @@
-package patterns.command.a_simpleRemote.command;
+package patterns.command.c_simpleRemote.command;
 
-import patterns.command.a_simpleRemote.receiver.GarageDoor;
+import patterns.command.c_simpleRemote.receiver.GarageDoor;
 
 public class GarageDoorOpenCommand implements Command {
 	private final GarageDoor garageDoor;

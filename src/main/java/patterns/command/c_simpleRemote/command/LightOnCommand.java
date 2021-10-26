@@ -1,6 +1,6 @@
-package patterns.command.a_simpleRemote.command;
+package patterns.command.c_simpleRemote.command;
 
-import patterns.command.a_simpleRemote.receiver.Light;
+import patterns.command.c_simpleRemote.receiver.Light;
 
 public class LightOnCommand implements Command {
 	private final Light light;
