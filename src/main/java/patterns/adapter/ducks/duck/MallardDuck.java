@@ -1,10 +1,13 @@
-package patterns.adapter.ducks;
+package patterns.adapter.ducks.duck;
 
 public class MallardDuck implements Duck {
+
+	@Override
 	public void quack() {
 		System.out.println("Quack");
 	}
- 
+
+	@Override
 	public void fly() {
 		System.out.println("I'm flying");
 	}

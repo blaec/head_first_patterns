@@ -1,20 +1,22 @@
 package patterns.adapter.ducks.challenge;
 
-import headfirst.designpatterns.adapter.ducks.Duck;
+import patterns.adapter.ducks.duck.Duck;
 
 public class DroneAdapter implements Duck {
-	Drone drone;
- 
-	public DroneAdapter(Drone drone) {
-		this.drone = drone;
-	}
-    
-	public void quack() {
-		drone.beep();
-	}
-  
-	public void fly() {
-		drone.spin_rotors();
-		drone.take_off();
-	}
+    Drone drone;
+
+    public DroneAdapter(Drone drone) {
+        this.drone = drone;
+    }
+
+    @Override
+    public void quack() {
+        drone.beep();
+    }
+
+    @Override
+    public void fly() {
+        drone.spin_rotors();
+        drone.take_off();
+    }
 }
