@@ -1,6 +1,5 @@
 package patterns.adapter.ducks.duck;
 
-import patterns.adapter.ducks.duck.Duck;
 import patterns.adapter.ducks.turkey.Turkey;
 
 public class TurkeyAdapter implements Duck {
