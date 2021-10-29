@@ -1,12 +1,12 @@
-package patterns.adapter.iterenum;
+package patterns.adapter.iterenum.iter_enum;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Enumeration;
 
 public class IteratorEnumerationTestDrive {
-	public static void main (String args[]) {
-		ArrayList<String> l = new ArrayList<String>(Arrays.asList(args));
+	public static void main (String[] args) {
+		ArrayList<String> l = new ArrayList<>(Arrays.asList(args));
 		Enumeration<?> enumeration = new IteratorEnumeration(l.iterator());
 		while (enumeration.hasMoreElements()) {
 			System.out.println(enumeration.nextElement());

@@ -1,4 +1,4 @@
-package patterns.adapter.iterenum;
+package patterns.adapter.iterenum.iter_enum;
 
 import java.util.Enumeration;
 import java.util.Iterator;

@@ -1,4 +1,4 @@
-package patterns.adapter.iterenum;
+package patterns.adapter.iterenum.enum_iter;
 
 import java.util.Arrays;
 import java.util.Enumeration;
@@ -6,8 +6,8 @@ import java.util.Iterator;
 import java.util.Vector;
 
 public class EI {
-	public static void main (String args[]) {
-		Vector<String> v = new Vector<String>(Arrays.asList(args));
+	public static void main (String[] args) {
+		Vector<String> v = new Vector<>(Arrays.asList(args));
 		Enumeration<String> enumeration = v.elements();
 		while (enumeration.hasMoreElements()) {
 			System.out.println(enumeration.nextElement());
