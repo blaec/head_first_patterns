@@ -1,4 +1,4 @@
-package patterns.decorator.pizza;
+package patterns.decorator.pizza.component;
 
 public abstract class Pizza {
 	String description = "Basic Pizza";

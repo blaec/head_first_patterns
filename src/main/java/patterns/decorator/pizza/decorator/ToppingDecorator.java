@@ -1,4 +1,6 @@
-package patterns.decorator.pizza;
+package patterns.decorator.pizza.decorator;
+
+import patterns.decorator.pizza.component.Pizza;
 
 public abstract class ToppingDecorator extends Pizza {
 	Pizza pizza;

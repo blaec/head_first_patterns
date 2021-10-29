@@ -1,4 +1,4 @@
-package patterns.decorator.starbuzz;
+package patterns.decorator.starbuzz.component;
 
 public abstract class Beverage {
 	String description = "Unknown Beverage";

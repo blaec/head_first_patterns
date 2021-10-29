@@ -1,4 +1,6 @@
-package patterns.decorator.starbuzzWithSizes;
+package patterns.decorator.starbuzzWithSizes.decorator;
+
+import patterns.decorator.starbuzzWithSizes.component.Beverage;
 
 public abstract class CondimentDecorator extends Beverage {
 	public Beverage beverage;
