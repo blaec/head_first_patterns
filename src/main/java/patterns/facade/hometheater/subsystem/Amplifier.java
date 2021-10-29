@@ -1,4 +1,4 @@
-package patterns.facade.hometheater;
+package patterns.facade.hometheater.subsystem;
 
 public class Amplifier {
 	String description;

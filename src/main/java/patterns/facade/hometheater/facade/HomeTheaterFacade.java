@@ -1,22 +1,24 @@
-package patterns.facade.hometheater;
+package patterns.facade.hometheater.facade;
+
+import patterns.facade.hometheater.subsystem.*;
 
 public class HomeTheaterFacade {
-	Amplifier amp;
-	Tuner tuner;
-	StreamingPlayer player;
-	CdPlayer cd;
-	Projector projector;
-	TheaterLights lights;
-	Screen screen;
-	PopcornPopper popper;
+	private final Amplifier amp;
+	private final Tuner tuner;
+	private final StreamingPlayer player;
+	private CdPlayer cd;
+	private final Projector projector;
+	private final TheaterLights lights;
+	private final Screen screen;
+	private final PopcornPopper popper;
  
-	public HomeTheaterFacade(Amplifier amp, 
-				 Tuner tuner, 
-				 StreamingPlayer player, 
-				 Projector projector, 
-				 Screen screen,
-				 TheaterLights lights,
-				 PopcornPopper popper) {
+	public HomeTheaterFacade(Amplifier amp,
+							 Tuner tuner,
+							 StreamingPlayer player,
+							 Projector projector,
+							 Screen screen,
+							 TheaterLights lights,
+							 PopcornPopper popper) {
  
 		this.amp = amp;
 		this.tuner = tuner;

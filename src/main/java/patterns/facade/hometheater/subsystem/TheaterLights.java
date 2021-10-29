@@ -1,4 +1,4 @@
-package patterns.facade.hometheater;
+package patterns.facade.hometheater.subsystem;
 
 public class TheaterLights {
 	String description;
