@@ -1,5 +1,8 @@
 package patterns.iterator.dinerMerger;
 
+import patterns.iterator.dinerMerger.iterator.Iterator;
+import patterns.iterator.dinerMerger.menu.Menu;
+
 public class Waitress {
 	Menu pancakeHouseMenu;
 	Menu dinerMenu;
@@ -40,10 +43,7 @@ public class Waitress {
 			return true;
 		}
 		Iterator dinnerIterator = dinerMenu.createIterator();
-		if (isVegetarian(name, dinnerIterator)) {
-			return true;
-		}
-		return false;
+		return isVegetarian(name, dinnerIterator);
 	}
 
 
