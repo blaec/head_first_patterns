@@ -1,4 +1,4 @@
-package patterns.templateMethod.simple_barista;
+package patterns.templateMethod.a_simple_barista;
 
 public class Tea {
 
