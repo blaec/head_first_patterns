@@ -1,4 +1,4 @@
-package patterns.iterator.dinerMerger;
+package patterns.iterator.a_dinerMerger;
 
 public class MenuItem {
     String name;

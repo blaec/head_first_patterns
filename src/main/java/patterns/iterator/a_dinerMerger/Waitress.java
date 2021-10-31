@@ -1,7 +1,7 @@
-package patterns.iterator.dinerMerger;
+package patterns.iterator.a_dinerMerger;
 
-import patterns.iterator.dinerMerger.iterator.Iterator;
-import patterns.iterator.dinerMerger.menu.Menu;
+import patterns.iterator.a_dinerMerger.iterator.Iterator;
+import patterns.iterator.a_dinerMerger.menu.Menu;
 
 public class Waitress {
 	Menu pancakeHouseMenu;

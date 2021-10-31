@@ -1,6 +1,6 @@
-package patterns.iterator.dinerMerger.iterator;
+package patterns.iterator.a_dinerMerger.iterator;
 
-import patterns.iterator.dinerMerger.MenuItem;
+import patterns.iterator.a_dinerMerger.MenuItem;
 
 import java.util.ArrayList;
 

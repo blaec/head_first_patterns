@@ -1,8 +1,8 @@
-package patterns.iterator.dinerMerger.menu;
+package patterns.iterator.a_dinerMerger.menu;
 
-import patterns.iterator.dinerMerger.iterator.DinerMenuIterator;
-import patterns.iterator.dinerMerger.iterator.Iterator;
-import patterns.iterator.dinerMerger.MenuItem;
+import patterns.iterator.a_dinerMerger.iterator.DinerMenuIterator;
+import patterns.iterator.a_dinerMerger.iterator.Iterator;
+import patterns.iterator.a_dinerMerger.MenuItem;
 
 public class DinerMenu implements Menu {
     static final int MAX_ITEMS = 6;

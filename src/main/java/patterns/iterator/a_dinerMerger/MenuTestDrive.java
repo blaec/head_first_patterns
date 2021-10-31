@@ -1,8 +1,8 @@
-package patterns.iterator.dinerMerger;
+package patterns.iterator.a_dinerMerger;
 
-import patterns.iterator.dinerMerger.menu.DinerMenu;
-import patterns.iterator.dinerMerger.menu.Menu;
-import patterns.iterator.dinerMerger.menu.PancakeHouseMenu;
+import patterns.iterator.a_dinerMerger.menu.DinerMenu;
+import patterns.iterator.a_dinerMerger.menu.Menu;
+import patterns.iterator.a_dinerMerger.menu.PancakeHouseMenu;
 
 import java.util.Arrays;
 import java.util.List;
