@@ -1,8 +1,8 @@
 package patterns.iterator.b_dinerMergerCafe;
 
-import patterns.iterator.b_dinerMergerCafe.menu.CafeMenu;
-import patterns.iterator.b_dinerMergerCafe.menu.DinerMenu;
-import patterns.iterator.b_dinerMergerCafe.menu.PancakeHouseMenu;
+import patterns.iterator.b_dinerMergerCafe.aggregate.CafeMenu;
+import patterns.iterator.b_dinerMergerCafe.aggregate.DinerMenu;
+import patterns.iterator.b_dinerMergerCafe.aggregate.PancakeHouseMenu;
 
 public class MenuTestDrive {
     public static void main(String[] args) {

@@ -1,9 +1,8 @@
-package patterns.iterator.b_dinerMergerCafe.menu;
+package patterns.iterator.a_dinerMerger.aggregate;
 
-import patterns.iterator.b_dinerMergerCafe.MenuItem;
-import patterns.iterator.b_dinerMergerCafe.iterator.DinerMenuIterator;
-
-import java.util.Iterator;
+import patterns.iterator.a_dinerMerger.iterator.DinerMenuIterator;
+import patterns.iterator.a_dinerMerger.iterator.Iterator;
+import patterns.iterator.a_dinerMerger.MenuItem;
 
 public class DinerMenu implements Menu {
     static final int MAX_ITEMS = 6;
@@ -23,7 +22,7 @@ public class DinerMenu implements Menu {
                 "A hot dog, with sauerkraut, relish, onions, topped with cheese",
                 false, 3.05);
         addItem("Steamed Veggies and Brown Rice",
-                "A medly of steamed vegetables over brown rice", true, 3.99);
+                "Steamed vegetables over brown rice", true, 3.99);
         addItem("Pasta",
                 "Spaghetti with Marinara Sauce, and a slice of sourdough bread",
                 true, 3.89);
@@ -45,8 +44,10 @@ public class DinerMenu implements Menu {
     }
 
     @Override
-    public Iterator<MenuItem> createIterator() {
+    public Iterator createIterator() {
         return new DinerMenuIterator(menuItems);
+        // To test Alternating menu items, comment out above line,
+        // and uncomment the line below.
         //return new AlternatingDinerMenuIterator(menuItems);
     }
 

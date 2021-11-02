@@ -1,4 +1,4 @@
-package patterns.iterator.b_dinerMergerCafe.menu;
+package patterns.iterator.b_dinerMergerCafe.aggregate;
 
 import patterns.iterator.b_dinerMergerCafe.MenuItem;
 

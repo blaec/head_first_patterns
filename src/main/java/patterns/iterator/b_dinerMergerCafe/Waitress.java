@@ -1,6 +1,6 @@
 package patterns.iterator.b_dinerMergerCafe;
 
-import patterns.iterator.b_dinerMergerCafe.menu.Menu;
+import patterns.iterator.b_dinerMergerCafe.aggregate.Menu;
 
 import java.util.Iterator;
 

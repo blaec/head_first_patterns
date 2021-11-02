@@ -1,4 +1,4 @@
-package patterns.iterator.a_dinerMerger.menu;
+package patterns.iterator.a_dinerMerger.aggregate;
 
 import patterns.iterator.a_dinerMerger.iterator.Iterator;
 
