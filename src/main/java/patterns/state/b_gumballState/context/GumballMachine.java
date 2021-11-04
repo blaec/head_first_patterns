@@ -1,14 +1,15 @@
-package patterns.state.b_gumballState;
+package patterns.state.b_gumballState.context;
+
+import patterns.state.b_gumballState.state.*;
 
 public class GumballMachine {
+    private final State soldOutState;
+    private final State noQuarterState;
+    private final State hasQuarterState;
+    private final State soldState;
 
-    State soldOutState;
-    State noQuarterState;
-    State hasQuarterState;
-    State soldState;
-
-    State state;
-    int count = 0;
+    private State state;
+    private int count;
 
     public GumballMachine(int numberGumballs) {
         soldOutState = new SoldOutState(this);
@@ -17,11 +18,9 @@ public class GumballMachine {
         soldState = new SoldState(this);
 
         this.count = numberGumballs;
-        if (numberGumballs > 0) {
-            state = noQuarterState;
-        } else {
-            state = soldOutState;
-        }
+        state = hasGumballs()
+                ? noQuarterState
+                : soldOutState;
     }
 
     public void insertQuarter() {
@@ -37,47 +36,40 @@ public class GumballMachine {
         state.dispense();
     }
 
-    void releaseBall() {
+    public void releaseBall() {
         System.out.println("A gumball comes rolling out the slot...");
-        if (count > 0) {
-            count = count - 1;
+        if (hasGumballs()) {
+            count--;
         }
     }
 
-    int getCount() {
-        return count;
+    public boolean hasGumballs() {
+        return count > 0;
     }
 
-    void refill(int count) {
+    public void refill(int count) {
         this.count += count;
         System.out.println("The gumball machine was just refilled; its new count is: " + this.count);
         state.refill();
     }
 
-    void setState(State state) {
-        this.state = state;
+    public void setNoQuarterState() {
+        this.state = noQuarterState;
     }
 
-    public State getState() {
-        return state;
+    public void setSoldOutState() {
+        this.state = soldOutState;
     }
 
-    public State getSoldOutState() {
-        return soldOutState;
+    public void setHasQuarterState() {
+        this.state = hasQuarterState;
     }
 
-    public State getNoQuarterState() {
-        return noQuarterState;
+    public void setSoldState() {
+        this.state = soldState;
     }
 
-    public State getHasQuarterState() {
-        return hasQuarterState;
-    }
-
-    public State getSoldState() {
-        return soldState;
-    }
-
+    @Override
     public String toString() {
         StringBuilder result = new StringBuilder();
         result.append("\nMighty Gumball, Inc.");
@@ -86,8 +78,7 @@ public class GumballMachine {
         if (count != 1) {
             result.append("s");
         }
-        result.append("\n");
-        result.append("Machine is ").append(state).append("\n");
+        result.append("\nMachine is ").append(state).append("\n");
         return result.toString();
     }
 }

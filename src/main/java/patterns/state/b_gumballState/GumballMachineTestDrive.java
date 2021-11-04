@@ -1,5 +1,7 @@
 package patterns.state.b_gumballState;
 
+import patterns.state.b_gumballState.context.GumballMachine;
+
 public class GumballMachineTestDrive {
 
     public static void main(String[] args) {
