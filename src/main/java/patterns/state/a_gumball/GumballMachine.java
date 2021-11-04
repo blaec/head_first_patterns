@@ -1,4 +1,4 @@
-package patterns.state.gumball;
+package patterns.state.a_gumball;
 
 public class GumballMachine {
 
