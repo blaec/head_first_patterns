@@ -20,7 +20,7 @@ public class HasQuarterState implements State {
     @Override
     public void ejectQuarter() {
         System.out.println("Quarter returned");
-        gumballMachine.setState(gumballMachine.getNoQuarterState());
+        gumballMachine.setNoQuarterState();
     }
 
     @Override
@@ -28,9 +28,9 @@ public class HasQuarterState implements State {
         System.out.println("You turned...");
         int winner = randomWinner.nextInt(10);
         if ((winner == 0) && (gumballMachine.getCount() > 1)) {
-            gumballMachine.setState(gumballMachine.getWinnerState());
+            gumballMachine.setWinnerState();
         } else {
-            gumballMachine.setState(gumballMachine.getSoldState());
+            gumballMachine.setSoldState();
         }
     }
 

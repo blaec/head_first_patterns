@@ -3,7 +3,6 @@ package patterns.state.c_gumballStateWinner.context;
 import patterns.state.c_gumballStateWinner.state.*;
 
 public class GumballMachine {
-
     private final State soldOutState;
     private final State noQuarterState;
     private final State hasQuarterState;
@@ -11,7 +10,7 @@ public class GumballMachine {
     private final State winnerState;
 
     private State state;
-    private int count = 0;
+    private int count;
 
     public GumballMachine(int numberGumballs) {
         soldOutState = new SoldOutState(this);
@@ -21,11 +20,9 @@ public class GumballMachine {
         winnerState = new WinnerState(this);
 
         this.count = numberGumballs;
-        if (numberGumballs > 0) {
-            state = noQuarterState;
-        } else {
-            state = soldOutState;
-        }
+        state = hasGumballs()
+                ? noQuarterState
+                : soldOutState;
     }
 
     public void insertQuarter() {
@@ -41,8 +38,28 @@ public class GumballMachine {
         state.dispense();
     }
 
-    public void setState(State state) {
-        this.state = state;
+    public boolean hasGumballs() {
+        return count > 0;
+    }
+
+    public void setNoQuarterState() {
+        this.state = noQuarterState;
+    }
+
+    public void setSoldOutState() {
+        this.state = soldOutState;
+    }
+
+    public void setHasQuarterState() {
+        this.state = hasQuarterState;
+    }
+
+    public void setSoldState() {
+        this.state = soldState;
+    }
+
+    public void setWinnerState() {
+        this.state = winnerState;
     }
 
     public void releaseBall() {
@@ -60,30 +77,6 @@ public class GumballMachine {
         this.count += count;
         System.out.println("The gumball machine was just refilled; its new count is: " + this.count);
         state.refill();
-    }
-
-    public State getState() {
-        return state;
-    }
-
-    public State getSoldOutState() {
-        return soldOutState;
-    }
-
-    public State getNoQuarterState() {
-        return noQuarterState;
-    }
-
-    public State getHasQuarterState() {
-        return hasQuarterState;
-    }
-
-    public State getSoldState() {
-        return soldState;
-    }
-
-    public State getWinnerState() {
-        return winnerState;
     }
 
     @Override
